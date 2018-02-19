@@ -45,9 +45,9 @@ $(document).ready(function(){
   });
 
   // fun random tilt effect for each article well
-  $(".well").each(function(index,element){
-      var tilt = Math.floor((Math.random() * 5) -2);
-      $(element).css("transform","rotate("+tilt+"deg)");
-  })
+  // $(".well").each(function(index,element){
+  //     var tilt = Math.floor((Math.random() * 5) -2);
+  //     $(element).css("transform","rotate("+tilt+"deg)");
+  // })
 
 }); // end document ready function
