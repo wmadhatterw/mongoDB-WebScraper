@@ -1,0 +1,22 @@
+<div class="articles-wrapper container">
+    <div class="articles row">
+        <div class="col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+            <!-- do  articles exist? -->
+            {{#if articles}}
+            <!-- they do -->
+                {{>show-articles}}
+            {{else}}
+            <!-- they do not -->
+                <p>No articles yet! Try scraping for them by selecting a market:</p>
+                <!-- build a bootstrap dropdown -->
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        {{#each markets}}
+                            <li class="marketItem" data-market-id={{@index}}>{{this.market}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/if}}
+        </div>
+    </div><!--/end articles row-->
+</div><!-- /end main container-->
