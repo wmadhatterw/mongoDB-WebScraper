@@ -30,7 +30,7 @@ var ArticleSchema = new Schema({
     trim: true
   }
 
-
+});
 // Pass the schema to the Article model
 var Article = mongoose.model("Article", ArticleSchema);
 
